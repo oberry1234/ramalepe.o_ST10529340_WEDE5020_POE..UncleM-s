@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Now | UncleM's Foodtruck</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="juhuh.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <img src="photos\pexels-emris-17086340.jpg" alt="UncleM's logo">
+
+            <div>
+                <h2>UncleM's</h2>
+                <span>FOODTRUCK</span>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="membership.html">Membership</a>
+            <a href="order.html" class="active">Order Now</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ORDER HERO -->
+        <section class="order-hero">
+
+            <div class="order-hero-content">
+
+                <p class="tagline">UNCLEM'S FOODTRUCK</p>
+
+                <h1>Your Cravings, Our Priority.</h1>
+
+                <p>
+                    Hungry? Place your order with UncleM's Foodtruck.
+                    Choose your meal, provide your details and let us
+                    take care of the rest.
+                </p>
+
+                <a href="#order-form" class="btn primary-btn">
+                    Start Your Order
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDER INFORMATION -->
+        <section class="order-intro">
+
+            <p class="tagline">FRESH FOOD • FRIENDLY SERVICE</p>
+
+            <h2>Order Your Favourite Meal</h2>
+
+            <p>
+                Whether you are ordering for yourself, your family
+                or a special occasion, we are ready to serve you.
+            </p>
+
+        </section>
+
+
+        <!-- FOOD SELECTION -->
+        <section class="order-menu">
+
+            <div class="section-heading">
+                <h2>Choose From Our Food Gallery</h2>
+
+                <p>
+                    Select a meal below to add it to your order.
+                    Contact us for available meals and prices.
+                </p>
+            </div>
+
+
+            <div class="order-food-grid">
+
+                <article class="order-food-card">
+
+                    <img src="photos\pexels-ali-dashti-506667798-17398001.jpg"
+                         alt="Food selection one">
+
+                    <div class="order-food-info">
+                        <h3>Signature Meal</h3>
+                        <p>A delicious meal to satisfy your hunger.</p>
+
+                        <button type="button"
+                                class="select-food"
+                                data-food="Signature Meal">
+                            Select Meal
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="order-food-card">
+
+                    <img src="photos\pexels-biravencrow-36065964.jpg"
+                         alt="Food selection two">
+
+                    <div class="order-food-info">
+                        <h3>Special Selection</h3>
+                        <p>Enjoy something tasty and satisfying.</p>
+
+                        <button type="button"
+                                class="select-food"
+                                data-food="Special Selection">
+                            Select Meal
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="order-food-card">
+
+                    <img src="photos\pexels-dogu-tuncer-339534179-20329661.jpg"
+                         alt="Food selection three">
+
+                    <div class="order-food-info">
+                        <h3>Customer Favourite</h3>
+                        <p>A great choice for your next meal.</p>
+
+                        <button type="button"
+                                class="select-food"
+                                data-food="Customer Favourite">
+                            Select Meal
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="order-food-card">
+
+                    <img src="photos\pexels-enesfilm-8254061.jpg"
+                         alt="Food selection four">
+
+                    <div class="order-food-info">
+                        <h3>Freshly Prepared</h3>
+                        <p>Good food made for your enjoyment.</p>
+
+                        <button type="button"
+                                class="select-food"
+                                data-food="Freshly Prepared">
+                            Select Meal
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="order-food-card">
+
+                    <img src="photos\pexels-jaycelab-27488240.jpg"
+                         alt="Food selection five">
+
+                    <div class="order-food-info">
+                        <h3>Special Treat</h3>
+                        <p>Make your mealtime more enjoyable.</p>
+
+                        <button type="button"
+                                class="select-food"
+                                data-food="Special Treat">
+                            Select Meal
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="order-food-card">
+
+                    <img src="photos\pexels-jonathanborba-33952895.jpg"
+                         alt="Food selection six">
+
+                    <div class="order-food-info">
+                        <h3>Something Delicious</h3>
+                        <p>Choose a meal and enjoy the experience.</p>
+
+                        <button type="button"
+                                class="select-food"
+                                data-food="Something Delicious">
+                            Select Meal
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDER FORM -->
+        <section class="order-section" id="order-form">
+
+            <div class="order-heading">
+
+                <p class="tagline">LET'S GET YOUR ORDER READY</p>
+
+                <h2>Place Your Order</h2>
+
+                <p>
+                    Complete the information below so we can
+                    prepare your order.
+                </p>
+
+            </div>
+
+
+            <div class="order-container">
+
+                <form id="foodOrderForm">
+
+                    <h3>01. Customer Information</h3>
+
+                    <label for="customerName">Full Name</label>
+
+                    <input type="text"
+                           id="customerName"
+                           placeholder="Enter your full name"
+                           required>
+
+
+                    <label for="customerPhone">Phone Number</label>
+
+                    <input type="tel"
+                           id="customerPhone"
+                           placeholder="Enter your phone number"
+                           required>
+
+
+                    <label for="customerEmail">Email Address</label>
+
+                    <input type="email"
+                           id="customerEmail"
+                           placeholder="Enter your email address"
+                           required>
+
+
+                    <hr>
+
+
+                    <h3>02. Select Your Meal</h3>
+
+                    <label for="foodChoice">Choose Your Meal</label>
+
+                    <select id="foodChoice" required>
+
+                        <option value="">-- Select a meal --</option>
+
+                        <option value="Signature Meal">Signature Meal</option>
+
+                        <option value="Special Selection">Special Selection</option>
+
+                        <option value="Customer Favourite">Customer Favourite</option>
+
+                        <option value="Freshly Prepared">Freshly Prepared</option>
+
+                        <option value="Special Treat">Special Treat</option>
+
+                        <option value="Something Delicious">Something Delicious</option>
+
+                        <option value="Custom Order">Custom Order</option>
+
+                    </select>
+
+
+                    <label for="quantity">Quantity</label>
+
+                    <input type="number"
+                           id="quantity"
+                           min="1"
+                           max="50"
+                           value="1"
+                           required>
+
+
+                    <label for="specialRequest">Special Requests</label>
+
+                    <textarea id="specialRequest"
+                              rows="4"
+                              placeholder="Tell us about any special requests or custom meals..."></textarea>
+
+
+                    <hr>
+
+
+                    <h3>03. Delivery or Collection</h3>
+
+                    <label for="orderType">Choose Your Order Type</label>
+
+                    <select id="orderType" required>
+
+                        <option value="">-- Choose an option --</option>
+
+                        <option value="Delivery">Home Delivery</option>
+
+                        <option value="Collection">Customer Collection</option>
+
+                    </select>
+
+
+                    <div id="deliveryAddress" class="delivery-address">
+
+                        <label for="address">Delivery Address</label>
+
+                        <textarea id="address"
+                                  rows="3"
+                                  placeholder="Enter your street, area and address"></textarea>
+
+                    </div>
+
+
+                    <label for="orderDate">Preferred Order Date</label>
+
+                    <input type="date"
+                           id="orderDate"
+                           required>
+
+
+                    <label for="orderTime">Preferred Order Time</label>
+
+                    <input type="time"
+                           id="orderTime"
+                           required>
+
+
+                    <hr>
+
+
+                    <h3>04. Payment Preference</h3>
+
+                    <label for="paymentMethod">Select Payment Method</label>
+
+                    <select id="paymentMethod" required>
+
+                        <option value="">-- Choose payment method --</option>
+
+                        <option value="Cash">Cash</option>
+
+                        <option value="EFT">EFT / Bank Transfer</option>
+
+                        <option value="Card">Card (subject to availability)</option>
+
+                    </select>
+
+
+                    <div class="order-submit">
+
+                        <button type="submit" class="place-order-button">
+                            Place My Order
+                        </button>
+
+                        <p id="orderMessage" class="order-message"></p>
+
+                    </div>
+
+                </form>
+
+
+                <!-- ORDER SUMMARY -->
+                <aside class="order-summary">
+
+                    <h3>YOUR ORDER SUMMARY</h3>
+
+                    <div class="summary-icon">🛒</div>
+
+                    <p class="summary-label">Selected Meal</p>
+
+                    <h2 id="summaryFood">No meal selected</h2>
+
+                    <hr>
+
+                    <div class="summary-row">
+                        <span>Quantity</span>
+                        <strong id="summaryQuantity">1</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Order Type</span>
+                        <strong id="summaryType">Not selected</strong>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Payment</span>
+                        <strong id="summaryPayment">Not selected</strong>
+                    </div>
+
+                    <hr>
+
+                    <p class="summary-note">
+                        Your final price and delivery charges
+                        will be confirmed by UncleM's Foodtruck.
+                    </p>
+
+                    <div class="summary-contact">
+                        <p>Need assistance?</p>
+                        <a href="https://wa.me/27774028834">
+                            Contact us on WhatsApp
+                        </a>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- ORDER CLOSING -->
+        <section class="order-closing">
+
+            <h2>ANYWHERE • ANYTIME • ANY FOOD!</h2>
+
+            <p>
+                Thank you for choosing UncleM's Foodtruck.
+                We look forward to serving you.
+            </p>
+
+            <a href="gallery.html" class="btn primary-btn">
+                Explore Our Gallery
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>CONTACT US</h3>
+
+                <a href="tel:+27774028896">
+                    ☎ Call: 077 402 8896
+                </a>
+
+                <a href="https://wa.me/27774028834">
+                    WhatsApp: 077 402 8834
+                </a>
+
+                <p>Email: uncleM's foodtruck@gmail.com</p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>EXPLORE</h3>
+
+                <a href="gallery.html">Our Menu</a>
+                <a href="about us.html">About Us</a>
+                <a href="membership.html">Membership</a>
+                <a href="order.html">Delivery Information</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>COMPANY</h3>
+
+                <a href="about us.html">Our Story</a>
+                <a href="#">Compliance &amp; Legal</a>
+                <a href="#">FAQs</a>
+                <a href="#">Careers</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>OUR LOCATION</h3>
+
+                <p>Soshanguve</p>
+                <p>Block W</p>
+                <p>Address: 1498</p>
+
+                <a href="https://www.google.com/maps/dir/-25.4982086,28.1254896/Soshanguve+mall,+6610+Itsoseng+St,+Soshanguve+-+HH,+Soshanguve,+0164/"
+                   target="_blank">
+                    View Location 📍
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-brand">
+
+            <h2>UncleM's FOODTRUCK</h2>
+
+            <p>YOU HUNGRY? WE GOT YOU!</p>
+
+            <span>ANYWHERE • ANYTIME • ANY FOOD</span>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="bottom-links">
+                <a href="index.html">Home</a>
+                <a href="about us.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="membership.html">Membership</a>
+                <a href="order.html">Order</a>
+            </div>
+
+            <div class="socials">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">◎</a>
+                <a href="#" aria-label="X">𝕏</a>
+                <a href="#" aria-label="TikTok">♪</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 UncleM's Foodtruck. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
